@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" src="in.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="" style="float:left"; margin-top:-20px;>
+          <table style="margin-top: -20px">
+            <tr>
+              <td>
+                <img src="logo.png" alt="" class="logo">
+              </td>
+              <td style="width: 1000px">
+                <h3 style="float:left">WebLearn</h3>
+              </td>
+              <td><div id="main" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                login
+              </div>
+            </td>
+            <td><div id="main" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+              register
+            </div>
+          </td>
+        </tr>
+      </table>
+        </div>
+            <div id="mySidenav" class="sidenav" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="box">
+                  <h2>login</h2>
+                  <form>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="login">
+                  </form>
+              </div>
+            </div>
+            <div id="mySidenav1" class="sidenav1" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="box">
+                  <h2>Register</h2>
+                  <form name="MyForm" onsubmit="return MyFunction()">
+                      <div class="inputbox">
+                        <label>firstname</label>
+                          <input type="text" id="fname"name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>lastname</label>
+                          <input type="text" name="lname" id="lname" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" id="username"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>email</label>
+                          <input type="email" name="mail" id="mail"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" id="password" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>comfirm</label>
+                          <input type="password" name="comfirm" id="confirm"required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="back">
+                      <input type="submit" name="button" value="register">
+                  </form>
+              </div>
+            </div>
+
+        <img src="jellyfish.jpg" alt="" class="avatar">
+      </div>
+    </header>
+    <section>
+      <video width="1200" controls>
+        <source src="php.mp4" type="video/mp4">
+      </video>
+      <div class="news">
+
+      <h3>css гэж юу вэ?</h3>
+      <p>CSS гэдэг нь  Cascading Style Sheets гэдэг үгийн товчлол бөгөөд хэлбэр, дизайн гэж ойлгож болно. CSS нь  HTML кодчилолын элэмент тагуудыг хэрхэн үзүүлэх форматлахыг тодорхойлдог. Өөрөөр хэлбэл таны вэбийн өнгө үзэмж, харагдах байдлыг сайжруулдаг. CSS  нь .css өргөтгөлтэйгөөр хадгалагддаг.
+
+
+
+CSS гэж юу  вэ?
+
+·         CSS гэдэг үг нь Cascading Style Sheets гэдэг үгийн товчлол.
+
+·         Хэлбэрүүд нь HTML элементийг хэрхэн үзүүлэхийг тодорхойлно.
+
+·         Хэлбэрүүд (Style Sheets) хэлбэрийн хуудсанд хадгалагддаг.
+
+·         HTML 4.0 хийж чадахгүй зүйлийг хэлбэр ашиглан шийднэ.
+
+·         Гадаад хэлбэрийн хуудас нь таны ажлыг ихэд хөнгөвчилнө.
+
+·         Гадаад хэлбэрийн хуудас нь CSS өргөтгөлтэй файлд хадгалагддаг.
+
+
+
+CSS ашиглах давуу тал:
+
+Та нэг элементийн өнгө, форматыг солихын тулд бүх хэсэгтээ өөрчлөлт хийх шаардлаггүй харин CSS бичсэн хэсэгтээ солиход л бүх элементүүд хэвжүүлэгддэг. Энэ таны вэбмастеруудын ажлыг маш их хөнгөвчилдөг. CSS-ийг харуулж  чадах Browser-ууд төрөл бүр байна. Хэлбэрүүд нь ихэвчлэн таны вэб хуудасны гадна өөр файлд хадгалагддаг. Гадаад хэлбэрийн хуудасны ашигтай тал нь та нэг хэлбэрийг өөрчлөхийн тулд нэг л файлд өөрчлөлт оруулахад бүх хуудсанд хэвжүүлэгдэнэ.
+
+Сул тал нь Web browser бүрэн дэмжэгдээгүй. Хэтэрхий цогц тул интернэтийн хурднаас хамаарч бага зэрэг удаан.
+
+
+
+Хэлбэрийн хуудас нь (Style Sheet) хэлбэрийн мэдээллийг олон замаар тодорхойлно.
+
+1.    Вэб хуудас харуулсан програмд заасан хэлбэр
+
+2.    Гадаад хэлбэрийн хуудас
+
+3.    Дотоод хэлбэрийн хуудас (<head> элемент доторх)
+
+4.    HTML элемент доторх хэлбэр
+
+Нэг элемент дотор, нэг HTML хуудас дотор <head> элементэд зааж, эсвэл гадаад хэлбэрийн файлаар тодорхойлж болох юм. Мөн олон гадаад хэлбэрийн хуудсыг нэг HTML файлд ашиглаж болно.  HTML элемент дотор тодорхойлсон хэлбэр нь илүү эрхтэй байна. Өөрөөр хэлбэл гадаад файлд хэлбэр тодорхойлсон боловч элемент дотор мөн давхар хэлбэр тодорхойлбол элемент дэх хэлбэрээр хэвжүүлнэ.
+
+
+
+CSS бичих дүрэм
+
+CSS 3 хэсгээс бүрдэнэ. Сонгосон элемент, шинж чанар ба авах утга:
+
+       Сонгосон элемент {шинж чанар: авах утга}
+
+Сонгосон элемент нь HTML элемент байна. Шинж чанар гэдэг нь  таны өөрчлөх гэж байгаа шинж, шинж чанар бүрд тохирох утга авна. Шинж чанар ба авах утга нь 2 босоо цэгээр тусгаарлагдах ба тахир хаалтаар хүрээлэгдсэн байна. Body {color: black}
+
+Хэрэв утга нэгээс олон үг байвал хашилтанд хийж өгөн.
+
+       P {font-family: “sans serif”}
+
+Хэрвээ нэгээс олон шинж чанар тодорхойлж буй бол шинж чанаруудыг цэг таслалаар тусгаарлана.
+
+Padding шинж чанар нь элементийн хүрээ ба элементийн агуулга хоорондын зайг заадаг. Сөрөг утга авах боломжгүй. Дээд, доод, баруун, зүүн талын зайн хэмжээс бие биеэсээ хамааралгүй өөрчлөгдөж болно.</p>
+    </div>
+    </section>
+    <footer>
+      <div class="social">
+        <div class="middle">
+          <a href="https://www.facebook.com/" class="btn">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="btn">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.google.com/" class="btn">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="btn">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="txt">
+        <p>Web zohiomj bie daalt</p>
+      </div>
+    </footer>
+  </body>
+</html>

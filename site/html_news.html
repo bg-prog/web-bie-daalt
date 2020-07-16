@@ -1,0 +1,164 @@
+``<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" src="in.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="" style="float:left"; margin-top:-20px;>
+          <table style="margin-top: -20px">
+            <tr>
+              <td>
+                <img src="logo.png" alt="" class="logo">
+              </td>
+              <td style="width: 1000px">
+                <h3 style="float:left">WebLearn</h3>
+              </td>
+              <td><div id="main" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                login
+              </div>
+            </td>
+            <td><div id="main" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+              register
+            </div>
+          </td>
+        </tr>
+      </table>
+        </div>
+            <div id="mySidenav" class="sidenav" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="box">
+                  <h2>login</h2>
+                  <form>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="login">
+                  </form>
+              </div>
+            </div>
+            <div id="mySidenav1" class="sidenav1" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="box">
+                  <h2>Register</h2>
+                  <form name="MyForm" onsubmit="return MyFunction()">
+                      <div class="inputbox">
+                        <label>firstname</label>
+                          <input type="text" id="fname"name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>lastname</label>
+                          <input type="text" name="lname" id="lname" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" id="username"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>email</label>
+                          <input type="email" name="mail" id="mail"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" id="password" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>comfirm</label>
+                          <input type="password" name="comfirm" id="confirm"required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="back">
+                      <input type="submit" name="button" value="register">
+                  </form>
+              </div>
+            </div>
+      </div>
+    </header>
+    <section>
+      <video width="1200" controls>
+        <source src="php.mp4" type="video/mp4">
+      </video>
+      <div class="news">
+
+      <h3>html гэж юу вэ?</h3>
+      <p>HTML гэдэг нь Hyper Text Markup Language гэсэн үгийн товчлол. Энэ нь вэб хуудас харуулах заавар бичдэг кодчлол юм. HTML файлыг энгийн текст боловсруулах програм ашиглан үүсгэж болох бөгөөд htm эсвэл html гэсэн өргөтгөлтэй байна.
+
+HTML файл нь вэб хуудас харуулахад зориулсан кодчлолыг (tag) агуулсан байдаг. Бидний жишээнд үзсэн lecture.html файлын эхний кодчлол нь <html> байна. Энэ кодчлол Вэб хуудас харуулах заавар эхэлж байгааг заана. Файлын хамгийн сүүлийн кодчлол нь </html> байна. Энэ нь хуудас харуулах заавар дуусч байгааг илэрхийлнэ. <head> </head> гэсэн кодчлолын хооронд бичигдсэн мэдээлэл нь хуудасны толгойн хэсгийн мэдээллийг агуулах ба энэ нь Вэб хуудас харуулах хэрэгслээр харагдахгүй. <title> хэсэгт хуудасны гарчгийг бичнэ. Энэ гарчиг цонхны гарчгийн хэсэгт гарна. body кодчлолын хооронд бичигдсэн мэдээлэл Вэб хуудас харуулагч хэрэгслээр харагдана. <b> ба </b> кодчлолын хооронд бичигдсэн текст тодоор бичигдэнэ.
+НТМ ба HTML өргөтгөлийн ялгаа
+HTML ба НТМ өртгөтгөл нь зарчмын хувьд ялгаагүй юм. Учир нь өмнө хэрэглэгддэг байсан програмууд өргөтгөлийн хэмжээг 3 тэмдэгтээр хязгаарлаж байсан. Харин одоо энэ хязгаарлалт үгүй болсноор өргөтгөлийг 4 тэмдэгтээр илэрхийлж болно.
+HTML элементийн кодчлол
+HTML элементүүдийг кодчилдог. (HTML tag) Кодоо < > хаалтанд бичдэг ба ихэвчлэн хосоор бичигдэнэ. Жишээ нь : <b> ба </b> гэх мэт. Үүнийг эхлэлийн ба төгсгөлийн кодчлол гэж нэрлэж болно. Кодыг жижиг үсгээр бичнэ. HTML элементийн кодчлол нь тодорхой шинж чанарыг агуулсан байж болно. Жишээ нь: <body> кодчлолд дэвсгэр өнгө гэсэн шинжийг нэмж болно. <body bgcolor = "blue"> гэвэл хуудасны дэвсгэр өнгө хөхөөр гарна. Мөн хүснэгт <table> гэсэн кодчлолд хүснэгтийг хүрээгүй гэж заавал <table border="0"> гэж өгнө. Шинж чанарууд нь нэр ба утгаар тодорхойлогдоно. Кодчлолын шинж чанар эхлэлийн кодчлолд бичигддэг. Border гэдэг нь шинж чанарын нэр, "0" гэдэг нь утга нь болно. Шинж чанарын утгыг хаалтанд бичих шаардлагатай ба ихэвчлэн давхар хаалтыг ашиглана. Гэвч дан хаалт мөн зөвшөөрөгдөнө. Зарим тохиолдолд утга нь өөрөө хаалт агуулж байвал дан хаалт хэрэглэх шаардлагатай. Жишээ нь: name = 'George' 'Mary' 'Green’
+ДОГОЛ МӨР ТОДОРХОЙЛОХ <Р> кодчлол
+ГАРЧИГ ТОДОРХОЙЛОХ <н> кодчлол
+Н кодчлол нь текстийн гарчгийг тодорхойлно. h1, h2, h3, h4, h5, h6 гэсэн утгуудтай. h1 нь гарчгийн үсгийн хэмжээг хамгийн томоор, h6 үсгийн хэмжээг жижгээр харуулна.
+<h> кодчлолыг харуулахад гарчгийн ард ба өмнө нь хоосон мөр нэмэгддэг.
+<р> кодчлолтой адилхан
+<BR> КОДЧЛОЛ
+<br> кодчлолоор курсорыг дараагийн мөр рүү шилжүүлдэг. Гэхдээ шинээр догол мөр эхэлж байна гэж ойлгож болохгүй. <br> нь төгсгөлгүй кодчлол өөрөөр хэлбэл ганцаараа бичигдэнэ.
+НТМL ДЭХ ТАЙЛБАР<! >
+Тайлбар бичих кодчлол нь HTML бичиглэлд нэмэлт тайлбарыг оруулахад ашиглагдана. Тайлбар гэсэн энэ кодчлол нь вэб хуудсанд харагдахгүй. Зөвхөн танд өөрийн бичиглэлийг тайлбарлахад хэрэг болно.
+Тайлбар 
+Тайлбарын эхний хаалтын ард анхаарлын тэмдэг бичигдэнэ. Харин сүүлийн хаалтын өмнө ямар нэг тэмдэг байхгүй
+HTML текст бичиж байхдаа таны вэб хуудас хэрхэн харагдахыг бүрэн мэдэж чадахгүй. Зарим компьютерийн дэлгэц том, зарим нь жижиг, мөн хэрэглэгчээс цонхны хэмжээг өөрчилж харах боломжтой байдаг. HTML хоосон зайг тооцдоггүй. Өөрөөр хэлбэл та хэдэн ч хоосон зай оруулсан түүнийг зөвхөн 1 гэж л тооцно. Мөн шинэ мөрөөс эхэлсэн ч түүнийг 1 хоосон зай гэж үзнэ. Тэгвэл шинэ мөрөөс эхлэхийн тулд <р>,
+ <br> гэсэн кодчлолуудыг ашиглаж болно. Бnдний өмнө үзсэнээр <р>, <h> кодчлолууд хоосон мөр агуулдаг.</p>
+ </div>
+    </section>
+    <footer>
+      <div class="social">
+        <div class="middle">
+          <a href="https://www.facebook.com/" class="btn">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="btn">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.google.com/" class="btn">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="btn">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="txt">
+        <p>Web zohiomj bie daalt</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" src="in.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="" style="float:left"; margin-top:-20px;>
+          <table style="margin-top: -20px">
+            <tr>
+              <td>
+                <img src="logo.png" alt="" class="logo">
+              </td>
+              <td style="width: 1000px">
+                <h3 style="float:left">WebLearn</h3>
+              </td>
+              <td><div id="main" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                login
+              </div>
+            </td>
+            <td><div id="main" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+              register
+            </div>
+          </td>
+        </tr>
+      </table>
+        </div>
+            <div id="mySidenav" class="sidenav" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="box">
+                  <h2>login</h2>
+                  <form>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="login">
+                  </form>
+              </div>
+            </div>
+            <div id="mySidenav1" class="sidenav1" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="box">
+                  <h2>Register</h2>
+                  <form name="MyForm" onsubmit="return MyFunction()">
+                      <div class="inputbox">
+                        <label>firstname</label>
+                          <input type="text" id="fname"name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>lastname</label>
+                          <input type="text" name="lname" id="lname" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" id="username"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>email</label>
+                          <input type="email" name="mail" id="mail"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" id="password" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>comfirm</label>
+                          <input type="password" name="comfirm" id="confirm"required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="back">
+                      <input type="submit" name="button" value="register">
+                  </form>
+              </div>
+            </div>
+
+        <img src="jellyfish.jpg" alt="" class="avatar">
+      </div>
+    </header>
+    <section>
+      <video width="1200" controls>
+        <source src="php.mp4" type="video/mp4">
+      </video>
+      <div class="news">
+
+      <h3>php гэж юу вэ?</h3>
+      <p>PHP хэлний тухай
+PHP гэдэг нь Personal Home Page гэсэн үгийн товчлол бөгөөд анх 1994 онд Common Gateway Interface binaries бүтээхийн тулд С хэл дээр Rasmus Lerdorf бичсэнээр түүх нь эхэлдэг. Тэрээр анх Perl хэлний script-д багахан өөрчлөлт оруулан өөрийн Personal HomeРage бүтээсэн байна. Энэхүү багажийг анх нь түүний вэб хуудсанд хичнээн хүн зочилж байгааг тоолон мэдээлэх зорилгоор хэрэглэжээ. Тэрээр эдгээр бинар кодуудаа PHP/FI бүтээх Form Interpreter хэмээн нэрлэж, илүү олон боломжуудаар хангаж өгөх болсон ба өгөгдлийн сантай харьцах, динамик вэбийг бүтээх боломжтой болсон байна. Ингээд 1995 оны 6 сарын 8-д Lerdorf РНР-ийн release хувилбарыг олон нийтэд дэлгэн тависанаар РНР-ийн хөгжил нь эрчээ авчээ. Энэ release хувилбар нь РНР 2 нэртэй байсан ба өнөөгийн РНР-гийн үндсэн функцуудийг агуулж байжээ. Түүнд Perl-тэй адил төстэй хувьсагчууд, form handling ба HTML-тэй хамтран хэрэглэгдэх боломж байв. Бичиглэл(syntax) нь Perl-тэй төстэй талууд нэлээд байсан ч түүнийг бодвол хязгаарлагдмал, энгийн, илүү болхи байсан юм. Израйлын Technion IIT компаний хөгжүүлэгчид болох Zeev Suraski, Andi Gutmars хоёр РНР-гийн сул талуудыг засаж янзлан 1997 онд РНР 3 -ийг гаргасан ба нэрээ өөрчлөн PHP: Hypertext Preprocessor болов. Хөгжүүлэлтийн баг нь албан ёсоор PHP/FI 2 -ийн бета туршилтын хувилбарыг 1997 оны 11 сарын 2-нд гаргажээ. Дараа нь РНР 3-ийн нийтийн тест эхэлсэн бөгөөд жинхэнэ хувилбар нь 1998 оны 6-р сард гарсан. Suraski, Gutman нар РНР-ийн цөмийг шинээр бүтээн Zend Engine-ийг 1999 онд бүтээсэн бөгөөд Израйлын Ramat Gan хотод Zend Technologies-г байгуулсан ажээ.
+РНР бол платформ хамааралгүй, HTML холилдсон сервер талын вэб програмчлалын хэл юм. РНР нь CGI & Perl, C хэлүүдтэй их төстэй гэж хэлж болно. РНР ийн давуу талууд гэвэл олон програмчлалын хэлүүдтэй хамтран ажиллах боломжтой, маш олон төрлийн Database буюу мэдээллийн сантай          / ж.н : MySQL, Opacle, SQL, PostgreSQL, mSQL, SyBase, Access .../
+ харилцан ажиллаж чаддаг, олон төрлийн протоколуудтай харицан ажиллах боломжтой IMAP, SNMP, NNTP, POP3 , HTTP гэх мэт маш сайн сервер талын програмчлалын хэл юм. Мөн хэрэглэгчид сурахад хялбар байдаг. РНР нь формтай ажиллах, cookie, файлтай ажиллах, зураг тэкстэн файлыг үүсгэх, и-мэйл илгээх, E-shop байгуулах, серверийг удирдах гэх мэт маш олон үйлдлийг хийж гүйцэтгэж чадна. РНР кодчлол <? ба ?> эсвэл <?php ба ?> гэсэн тэмдэгтийн хооронд бичигдэнэ. РНР кодчлол ашиглан байгуулсан вэб хуудасны өргөтгөл нь .php .php3 .php4 гэх мэт байх хэрэгтэй байдаг. Энгийн HTML өргөтгөлтэй вэб хуудсан дээр ажиллах боломжгүй. РНР-г сервер талын хэл учраас энгийн windows -ийн орчинд ажиллаж чадахгүй юм. Тиймээс нэмэлт сервер Software / APACHE, WAMP сервер гэх мэт / - уудыг өөрийн компьютерт суулгаснаар РНР хуудсуудаа шалгаж туршиж байх боломж бүрдэнэ. Энэ хэл нь бичиглэлийн хувьд HTML блокууд дотор PHP-гийн <?php ?> эхлэл, төгсгөл блокуудыг нэмээд дотор нь кодоо бичнэ. Хуудас нь .htm биш .php өргөтгөлтэй байна. Одоогийн PHP хэл нь обьект хандлагат парадигмтэй.
+  </div>
+    </section>
+    <footer>
+      <div class="social">
+        <div class="middle">
+          <a href="https://www.facebook.com/" class="btn">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="btn">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.google.com/" class="btn">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="btn">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="txt">
+        <p>Web zohiomj bie daalt</p>
+      </div>
+    </footer>
+  </body>
+</html>

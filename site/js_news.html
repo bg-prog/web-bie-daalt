@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" src="in.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="" style="float:left"; margin-top:-20px;>
+          <table style="margin-top: -20px">
+            <tr>
+              <td>
+                <img src="logo.png" alt="" class="logo">
+              </td>
+              <td style="width: 1000px">
+                <h3 style="float:left">WebLearn</h3>
+              </td>
+              <td><div id="main" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                login
+              </div>
+            </td>
+            <td><div id="main" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+              register
+            </div>
+          </td>
+        </tr>
+      </table>
+        </div>
+            <div id="mySidenav" class="sidenav" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="box">
+                  <h2>login</h2>
+                  <form>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="login">
+                  </form>
+              </div>
+            </div>
+            <div id="mySidenav1" class="sidenav1" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="box">
+                  <h2>Register</h2>
+                  <form name="MyForm" onsubmit="return MyFunction()">
+                      <div class="inputbox">
+                        <label>firstname</label>
+                          <input type="text" id="fname"name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>lastname</label>
+                          <input type="text" name="lname" id="lname" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" id="username"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>email</label>
+                          <input type="email" name="mail" id="mail"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" id="password" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>comfirm</label>
+                          <input type="password" name="comfirm" id="confirm"required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="back">
+                      <input type="submit" name="button" value="register">
+                  </form>
+              </div>
+            </div>
+
+        <img src="jellyfish.jpg" alt="" class="avatar">
+      </div>
+    </header>
+    <section>
+      <video width="1200" controls>
+        <source src="php.mp4" type="video/mp4">
+      </video>
+      <div class="news">
+
+      <h3>JavaScript гэж юу вэ?</h3>
+      <p>JavaScript бол програмчлалын хэл юм, яг л C/C++, Python, Ruby, Assembler, Pascal, Java гэдэг шиг, хэрвээ та програмчлалын хэл гэж юу болох талаар мэдэхгүй бол яг одоо энэ блогийг хаагаад, мэддэг болсон хойноо эргэж орж ирэхийг зөвлье, гэхдээ заавал эргэж орж ирээрэй ;)
+
+Нялуунаас шулуун нь дээр, шууд чухал зүйлсээ яръя. Хамгийн түрүүнд JavaScript бол Java биш, энэ нь Нохой, Нохойн Хошуу хоёр шиг тэс ялгаатай зүйлс юм, бүр тэс хөндлөн шүү. Тиймээс энэ блог дээр Java-гийн тухай үртэс ч байхгүйг анхаарна биз.
+
+Та Жангүм гээд хангүг авгайг үзээгүй ч сонссон байх, оточ, тогооч, эмч, өөр юу юу ч билээ дуудах цол нь наснаас нь илүү гарсан нөхөр байдаг. Яг л Жангүм шиг JavaScript-эд дуудах цол мундахгүй. Нэрнээс нь л ажихад JavaScript маань script хэлний ангилалд Shell, Lua гэх мэт найзуудтайгаа цуг хамаарагддаг бол Python, Ruby гээд өөр нэг найзуудтайгаа interpreter хэлнүүдийн ангилалд бас багтчихдаг олон нүүртэй нэгэн. Дээр нь functional, prototype-based, multi-paradigm гээд л, мөн мэдээж object-oriented, энэ бүхнийх нь талаар удахгүй илүү гоё тайлбарлъя.
+
+Намтар
+
+Хэдхээн жилийн өмнө Web 1.0 гэдэг өвгөрсөн систем халагдаж эхлэж байхад гарсан жижигхээн асуудал нь вэбээр дамжуулан хэрэглэгчийн буюу client компьютер дээр хэрхэн бяцхан хэмжээний тооцооллыг хийх вэ гэсэнэрхүү юм байлаа. HTML, CSS гэх мэт тооцоолол хийдэггүй markup хэлүүд нь мэдээллийг ойлгомжтой, үзэмжтэй дүрсэлж болж байсан ч илүү амьд, ухаалаг болгохын тулд эдгээр хөлдүү, үл хөдлөх кодууд дотор бяцхан хэмжээний тооцоолол оруулах нь зайлшгүй хэрэгцээ байлаа. Ингээд '95 оны 9 сард алдарт Netscape броузер дээр анхны LiveScript beta байдлаар мэндэллээ. Энэ нь HTML дотор бяцхан хэмжээний script код шигтгэж хэрэглэгчрүү явуулсанаар хэрэглэгчийн броузер HTML-ээ өрж байхдаа зэрэг тэр script-ийг компайлдаж ажиллуулах юм. HTML хуудасны элемент бүрийг унших, шинэ элемэнт үүсгэх, хүссэн элементийнхээ агуулгыг өөрчлөхөөс гадна бүр устгах хүртэл боломжоор өвч бүрэн хангахын тулд анхнаасаа асинхрон ажиллагааг шаардаж байж ээ. Мөн мэдээж энгийн арфиметик үйлдлээс ихсүүлээд хүндхэн тооцооллыг ч хийх чадвартай байх ёстой.
+
+LiveScript-ийн нэрийг Netscape нэг л өдөр JavaScript гээд өөрчилж орхилоо. Энэ нь Netscape-ийн шинэхэн хувилбар болох 2.0B3 дээр LiveScript маань Java-г дэмждэг болсонтой холбоотой ба хэсэг хугацаанд үл ойлгогдох нэрний жанхуу зууралдсаны эцэст тухайн үед програм хангамжийн ертөнцөд дуулиан дэгдээгээд байсан Java-гийн нэрийг ашиглангаа цоо шинэ хэлээ PR-дах маркетингийн хэрэгсэл болгож ашиглах гэсэн атгаг санаагаан хэрэгжүүлж, JavaScript гэдэг нэрийг эргэлт буцалтгүй өглөө. Одоо хирнэ JavaScript гэх төөрдөг байшин шиг нээрээрээ л явж байна.
+
+Ийнхүү интернэт дэлхийг аалзны тороороо хирж, вэб технологи олны хэрэглээ болсоноор Firefox, Opera мэтийн шинэ, хүчирхэг броузерууд хүч түрэн орж ирлээ, Netscape ч олигарх байр сууриа алдаж, JavaScript-ийг олуулаа хувааж идэх болов. Өнөөдрийн байдлаар JavaScript гэдэг худалдааны тэмдэгтийг Oracle эзэмшдэг ч үүнийг интернэтийн зах хязгааргүй хэрэглэгчид дэлхий нийтийн хэрэглээний стандарт болгон, хэн нэгний өмч бусаар нээлттэй хөгжүүлж, ашиглацгааж байна. Зөвхөн Netscape, Mozilla мэтийн гар дамжсаар, айлаас айлд зарагдах өргөмөл хүүхэд шиг, зөвхөн client-side ашиглагдаж, вэб хөгжүүлэгч бүрийн мэддэг ч шүднийх нь өвчин мэт дуртай дургүй ашигладаг байсан энэ хэл өнөөдөр шинэхэн аав Google-ийн хүчирхэг нударганд эр шиг эр болон хүмүүжжээ.
+
+Өнөөдөр JavaScript-ийг зөвхөн client-side бус, server-side байдлаар маш түгээмэл ашиглаж байна, яг л PHP шиг. Үүгээр ч үл барам орчин үеийн моод болж, асар олон сангууд, framework-ууд JavaScript дээр хөгжүүлэгдэж байгаагийн хамгийн том жишээ бол jQuery юм. Мөн server-side буюу V8, Node.JS гэх мэт технологиуд HTML5, CSS3 технологиудтай хавсран ирээдүйг тодорхойлох хэмжээний байр суурьтай болоод байгаа билээ.
+
+Бичиглэл буюу Syntax
+
+Анх харахад бичиглэл буюу syntax-аараа C, Java-гаас ялгараад байх зүйлгүй харагддаг нь Java-гийн script хувилбар гэж андуурахад хүргэдэг биз, нэр нь хүртэл. Хэрвээ та C, Java дээр програм бичиж мэддэг, ядаж жижигхээн арфиметикийн үйлдлүүдийг ажиллуулж үзэж байсан бол JavaScript дээр тэрийг чинь яг адилхан бичиглэлээр хийчихнэ, үүн дээр төөрөөд, манраад байх зүйлгүй. Жишээ болгож хоёр тоог нэмдэг функц бичээд, түүнийгээ ашиглаж үзүүлье:
+function plus(a, b) {
+    var c = a + b;
+    return c;
+}
+
+document.write(plus(3, 4)); // 7 гэж хэвлэнэ
+
+Мөн for, if, while гээд хэрэглээний бүх үйдлүүд бүгд яг адил. Массив буюу array, string, int гээд л бусад хэлнээс илүү л юм байна уу гэхээс дутах зүйл ер үгүй.
+
+Давуу талууд
+
+Түгээмэл хэрэглэгддэг хавийн хэлүүдэд байдаггүй хамгийн том давуу талуудынх нь нэг нь non-block буюу асинхрон ажиллагаатай. Синхрон, асинхрон гэх мэт үгнүүдийг бид мэддэг ч яг програмчлал дээр яаж тусдагийг мэдэх нь маш чухал.
+
+Синхрон - Та үйлдэл хийхийн тулд яг одоо хийгдэж байгаа өөр нэг үйлдлийн дуусахын хүлээх шаардлагатай.
+Асинхрон - Синхроны эсрэг буюу та үйлдэл хийхдээ заавал яг одоо хийгдэж байгаа өөр нэг үйдлийн дуусахыг хүлээх шаардлагагүйгээр хажуугаар нь шургаж ороод зэрэг үйлдэх боломжтой.
+
+Үүнийг non-block ч гэж нэрлэдэг ба үүнийг үл бөглөрөх гэж ойлгож болно. Ойлгомжтойгоор бол програм ажиллахдаа хэзээ ч кодын аль нэг мөр дээр очоод гацахгүй. Жишээ нь C дээр гараас a-гийн утгыг аваад хэвлэ гэдэг код бичихэд a-гийн утга гараас орж иртэл хэвлэх үйлдэл хийгдэхгүй, энэ бол зөв, аа харин бүүр доод талд нь printf("Hello world!") гэж хэвлэхээр байсан бол a-гийн утга гараас орж иртэл Hello world! хэвлэгдэхгүй, энэ бол бөглөрөл, энэ бол буруу. Үүнийг синхрон буюу blocked ажиллагаа гэдэг юм. Жишээ нь энэ товчин дээр дарвал ингэ, баазаас ийм мэдээлэл ирвэл тэг, Enter товч дарагдчихвал ийшээ бол гэх мэт асинхрон ажиллагааг C, Java, Python, Ruby гээд бидний мэддэг ихэнх хэлэн дээр хэрэгжүүлэхийн тулд заавал нэг том сан дуудаж оруулж ирэх шаардлагатай болдог бол JavaScript бол төрөлхийн (built-in) ийм хэл юм.</p>
+  </div>
+    </section>
+    <footer>
+      <div class="social">
+        <div class="middle">
+          <a href="https://www.facebook.com/" class="btn">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="btn">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.google.com/" class="btn">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="btn">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="txt">
+        <p>Web zohiomj bie daalt</p>
+      </div>
+    </footer>
+  </body>
+</html>

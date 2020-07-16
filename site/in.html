@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth">
+  <head>
+	<title>bie daalt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="in.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" src="in.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.js">
+
+    </script>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="" style="float:left"; margin-top:-20px;>
+          <table style="margin-top: -20px">
+            <tr>
+              <td>
+                <img src="logo.png" alt="" class="logo">
+              </td>
+              <td style="width: 1000px">
+                <h3 style="float:left">WebLearn</h3>
+              </td>
+              <td><div id="main" style="font-size:30px;cursor:pointer;" onclick="openNav()">
+                login
+              </div>
+            </td>
+            <td><div id="main" style="font-size:30px;cursor:pointer" onclick="openNav1()">
+              register
+            </div>
+          </td>
+        </tr>
+      </table>
+        </div>
+            <div id="mySidenav" class="sidenav" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="box">
+                  <h2>login</h2>
+                  <form>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="login">
+                  </form>
+              </div>
+            </div>
+            <div id="mySidenav1" class="sidenav1" style="display: flex">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="box">
+                  <h2>Register</h2>
+                  <form name="MyForm" onsubmit="return MyFunction()">
+                      <div class="inputbox">
+                        <label>firstname</label>
+                          <input type="text" id="fname"name="username" required="" class="user">
+                      </div>
+                      <div class="inputbox">
+                        <label>lastname</label>
+                          <input type="text" name="lname" id="lname" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>username</label>
+                          <input type="text" name="username" id="username"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>email</label>
+                          <input type="email" name="mail" id="mail"required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>password</label>
+                          <input type="password" name="password" id="password" required="" class="pass">
+                      </div>
+                      <div class="inputbox">
+                        <label>comfirm</label>
+                          <input type="password" name="comfirm" id="confirm"required="" class="pass">
+                      </div>
+                      <input type="submit" name="button" value="back">
+                      <input type="submit" name="button" value="register">
+                  </form>
+              </div>
+            </div>
+
+      </div>
+    </header>
+    <section>
+      <div class="banner">
+        <a href="#">
+        <slider>
+            <slide><p>slide1</p></slide>
+            <slide><p>slide2</p></slide>
+            <slide><p>slide3</p></slide>
+            <slide><p>slide4 </p></slide>
+        </slider>
+        </a>
+      </div>
+      <div class="navbar">
+        <h3></h3>
+      </div>
+      <div class="" id="" style="height:900px">
+        <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <img src="html.png" alt="">
+                    <h3>HTML</h3>
+                  </div>
+                <div class="face face2">
+                     <p>HTML гэдэг нь Hyper Text Markup Language гэсэн үгийн товчлол
+                        бөгөөд вэб хуудсан дахь текстийг хэрхэн харагдуулахыг вэб браузерт
+                        зааж өгдөг программын кодчлол юм. Уг хэлийг Tim Berners-Lee
+                       1991 онд шинжлэх ухааны бичиг баримтыг зохион байгуулах,
+                       бичиг баримтыг зохион байгуулах,
+                        өөр өөр платформруу дамжуулах зорилгоор үүсгэжээ.
+                      </p>
+                      <a href="html_news.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <img src="css.png" alt="">
+                    <h3>CSS</h3>
+                  </div>
+                <div class="face face2">
+                     <p>CSS гэдэг нь Cascading Style Sheets гэдэг үгийн товчлол
+                        бөгөөд хэлбэр, дизайн гэж ойлгож болох юм. CSS нь HTML кодчлолын
+                        элэмент тагуудийг хэрхэн үзүүлэх форматлахыг тодорхойлдог.
+                         Өөрөөр хэлбэл таны вэбийн өнгө үзэмжийн, харагдах байдлыг сайжруулдаг.
+                          CSS нь .css гэсэн өргөтгөлтэйгээр хадгалагддаг.
+                      </p>
+                      <a href="css_news.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <img src="js.png" alt="">
+                    <h3>JAVASCRIPT</h3>
+                  </div>
+                <div class="face face2">
+                     <p>Вэб дизайнеруудын цаг ямагт хүсэж ирсэн вэб хуудсаа
+                       хэрэглэгчиддээ уялдаа холбоотой байлгах хүсэл эрмэлзлэлийг
+                        хөгжүүлэхэд HTML нь хангалтгүй ядмаг байсан.
+                        Энэ үед Netscape нь браузерийг удирдах болон flash оруулах вэб хуудсыг
+                        интерактив чанартай болгох үүднээс JavaScript програмчиллын хэлийг боловсруулсан байна.
+                      </p>
+                      <a href="js_news.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+                <div class="card">
+                  <div class="face face1">
+                    <div class="content">
+                      <img src="php.png" alt="">
+                      <h3>PHP</h3>
+                    </div>
+                  <div class="face face2">
+                       <p>PHP гэдэг нь Personal Home Page гэсэн үгийн товчлол
+                         бөгөөд анх 1994 онд Common Gateway Interface binaries
+                         Common Gateway 
+                          бүтээхийн тулд С хэл дээр Rasmus Lerdorf бичсэнээр түүх нь эхэлдэг.
+                         Тэрээр анх Perl хэлний script-д багахан өөрчлөлт оруулан өөрийн
+                          Personal HomeРage бүтээсэн байна.Энэхүү багажийг анх нь түүний вэб хуудсанд
+                        </p>
+                        <a href="php_news.html">Read More</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social">
+        <div class="middle">
+          <a href="https://www.facebook.com/" class="btn">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="btn">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.google.com/" class="btn">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="btn">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="txt">
+        <p>Web zohiomj bie daalt</p>
+      </div>
+    </footer>
+  </body>
+</html>
